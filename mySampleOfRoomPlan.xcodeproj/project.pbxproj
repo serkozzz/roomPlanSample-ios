@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DB9A5EB2B47CC040086519E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EA2B47CC040086519E /* AppDelegate.swift */; };
+		9DB9A5ED2B47CC040086519E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */; };
+		9DB9A5EF2B47CC040086519E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EE2B47CC040086519E /* ViewController.swift */; };
+		9DB9A5F22B47CC040086519E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F02B47CC040086519E /* Main.storyboard */; };
+		9DB9A5F42B47CC050086519E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F32B47CC050086519E /* Assets.xcassets */; };
+		9DB9A5F72B47CC050086519E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */; };
+		9DB9A6182B47CC7C0086519E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A60F2B47CC7C0086519E /* Assets.xcassets */; };
+		9DB9A61A2B47CC7C0086519E /* UnsupportedDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A6122B47CC7C0086519E /* UnsupportedDevice.storyboard */; };
+		9DB9A61C2B47CC7C0086519E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A6162B47CC7C0086519E /* OnboardingViewController.swift */; };
+		9DB9A61D2B47CC7C0086519E /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A6172B47CC7C0086519E /* RoomCaptureViewController.swift */; };
+		9DB9A6302B47CDFB0086519E /* RoomPlanMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A62E2B47CDFB0086519E /* RoomPlanMain.storyboard */; };
+		9DB9A6322B47F2820086519E /* TestRoom.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A6312B47F2820086519E /* TestRoom.json */; };
+		9DB9A6362B48328D0086519E /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A6352B48328D0086519E /* LayoutView.swift */; };
+		9DB9A6382B4971D90086519E /* Room.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A6372B4971D90086519E /* Room.usdz */; };
+		9DB9A63A2B49745F0086519E /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A6392B49745F0086519E /* SceneKit Scene.scn */; };
+		9DB9A63C2B5099D70086519E /* RoomCaptureHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9DB9A5E72B47CC040086519E /* mySampleOfRoomPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySampleOfRoomPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB9A5EA2B47CC040086519E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9DB9A5EE2B47CC040086519E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DB9A5F12B47CC040086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DB9A5F32B47CC050086519E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB9A5F62B47CC050086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DB9A5F82B47CC050086519E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB9A60F2B47CC7C0086519E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB9A6132B47CC7C0086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UnsupportedDevice.storyboard; sourceTree = "<group>"; };
+		9DB9A6162B47CC7C0086519E /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9DB9A6172B47CC7C0086519E /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
+		9DB9A62F2B47CDFB0086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RoomPlanMain.storyboard; sourceTree = "<group>"; };
+		9DB9A6312B47F2820086519E /* TestRoom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestRoom.json; sourceTree = "<group>"; };
+		9DB9A6352B48328D0086519E /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
+		9DB9A6372B4971D90086519E /* Room.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Room.usdz; sourceTree = "<group>"; };
+		9DB9A6392B49745F0086519E /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
+		9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DB9A5E42B47CC040086519E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DB9A5DE2B47CC040086519E = {
+			isa = PBXGroup;
+			children = (
+				9DB9A5E92B47CC040086519E /* mySampleOfRoomPlan */,
+				9DB9A5E82B47CC040086519E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DB9A5E82B47CC040086519E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9A5E72B47CC040086519E /* mySampleOfRoomPlan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DB9A5E92B47CC040086519E /* mySampleOfRoomPlan */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9A60E2B47CC7C0086519E /* RoomPlan */,
+				9DB9A5EA2B47CC040086519E /* AppDelegate.swift */,
+				9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */,
+				9DB9A5EE2B47CC040086519E /* ViewController.swift */,
+				9DB9A6372B4971D90086519E /* Room.usdz */,
+				9DB9A6392B49745F0086519E /* SceneKit Scene.scn */,
+				9DB9A6352B48328D0086519E /* LayoutView.swift */,
+				9DB9A5F02B47CC040086519E /* Main.storyboard */,
+				9DB9A6312B47F2820086519E /* TestRoom.json */,
+				9DB9A5F32B47CC050086519E /* Assets.xcassets */,
+				9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */,
+				9DB9A5F82B47CC050086519E /* Info.plist */,
+			);
+			path = mySampleOfRoomPlan;
+			sourceTree = "<group>";
+		};
+		9DB9A60E2B47CC7C0086519E /* RoomPlan */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9A60F2B47CC7C0086519E /* Assets.xcassets */,
+				9DB9A62E2B47CDFB0086519E /* RoomPlanMain.storyboard */,
+				9DB9A6122B47CC7C0086519E /* UnsupportedDevice.storyboard */,
+				9DB9A6162B47CC7C0086519E /* OnboardingViewController.swift */,
+				9DB9A6172B47CC7C0086519E /* RoomCaptureViewController.swift */,
+				9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */,
+			);
+			path = RoomPlan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DB9A5E62B47CC040086519E /* mySampleOfRoomPlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB9A5FB2B47CC050086519E /* Build configuration list for PBXNativeTarget "mySampleOfRoomPlan" */;
+			buildPhases = (
+				9DB9A5E32B47CC040086519E /* Sources */,
+				9DB9A5E42B47CC040086519E /* Frameworks */,
+				9DB9A5E52B47CC040086519E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mySampleOfRoomPlan;
+			productName = mySampleOfRoomPlan;
+			productReference = 9DB9A5E72B47CC040086519E /* mySampleOfRoomPlan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DB9A5DF2B47CC040086519E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9DB9A5E62B47CC040086519E = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 9DB9A5E22B47CC040086519E /* Build configuration list for PBXProject "mySampleOfRoomPlan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DB9A5DE2B47CC040086519E;
+			productRefGroup = 9DB9A5E82B47CC040086519E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB9A5E62B47CC040086519E /* mySampleOfRoomPlan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DB9A5E52B47CC040086519E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB9A61A2B47CC7C0086519E /* UnsupportedDevice.storyboard in Resources */,
+				9DB9A5F72B47CC050086519E /* LaunchScreen.storyboard in Resources */,
+				9DB9A6382B4971D90086519E /* Room.usdz in Resources */,
+				9DB9A5F42B47CC050086519E /* Assets.xcassets in Resources */,
+				9DB9A6302B47CDFB0086519E /* RoomPlanMain.storyboard in Resources */,
+				9DB9A6182B47CC7C0086519E /* Assets.xcassets in Resources */,
+				9DB9A5F22B47CC040086519E /* Main.storyboard in Resources */,
+				9DB9A6322B47F2820086519E /* TestRoom.json in Resources */,
+				9DB9A63A2B49745F0086519E /* SceneKit Scene.scn in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DB9A5E32B47CC040086519E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB9A5EF2B47CC040086519E /* ViewController.swift in Sources */,
+				9DB9A5EB2B47CC040086519E /* AppDelegate.swift in Sources */,
+				9DB9A6362B48328D0086519E /* LayoutView.swift in Sources */,
+				9DB9A5ED2B47CC040086519E /* SceneDelegate.swift in Sources */,
+				9DB9A63C2B5099D70086519E /* RoomCaptureHelper.swift in Sources */,
+				9DB9A61C2B47CC7C0086519E /* OnboardingViewController.swift in Sources */,
+				9DB9A61D2B47CC7C0086519E /* RoomCaptureViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DB9A5F02B47CC040086519E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB9A5F12B47CC040086519E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB9A5F62B47CC050086519E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9DB9A6122B47CC7C0086519E /* UnsupportedDevice.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB9A6132B47CC7C0086519E /* Base */,
+			);
+			name = UnsupportedDevice.storyboard;
+			sourceTree = "<group>";
+		};
+		9DB9A62E2B47CDFB0086519E /* RoomPlanMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB9A62F2B47CDFB0086519E /* Base */,
+			);
+			name = RoomPlanMain.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DB9A5F92B47CC050086519E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DB9A5FA2B47CC050086519E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DB9A5FC2B47CC050086519E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7499ZBZAZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mySampleOfRoomPlan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For RoomPlan ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blackmana.mySampleOfRoomPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DB9A5FD2B47CC050086519E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7499ZBZAZ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mySampleOfRoomPlan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For RoomPlan ";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blackmana.mySampleOfRoomPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DB9A5E22B47CC040086519E /* Build configuration list for PBXProject "mySampleOfRoomPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB9A5F92B47CC050086519E /* Debug */,
+				9DB9A5FA2B47CC050086519E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB9A5FB2B47CC050086519E /* Build configuration list for PBXNativeTarget "mySampleOfRoomPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB9A5FC2B47CC050086519E /* Debug */,
+				9DB9A5FD2B47CC050086519E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DB9A5DF2B47CC040086519E /* Project object */;
+}
