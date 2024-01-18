@@ -27,10 +27,12 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
             let capturedRoom = try JSONDecoder().decode(CapturedRoom.self, from: data)
             print(capturedRoom)
             
+            let roomCaptureResult = RoomCaptureResult(from: capturedRoom)
             
-            layoutView.setWalls(walls: capturedRoom.walls)
-            layoutView.setDoors(doors: capturedRoom.doors)
-            layoutView.setWindows(windows: capturedRoom.windows)
+            
+            layoutView.setWalls(walls: roomCaptureResult.walls)
+            layoutView.setDoors(doors: roomCaptureResult.doors)
+            layoutView.setWindows(windows: roomCaptureResult.windows)
             
         } catch {
             print(error.localizedDescription)
@@ -46,7 +48,7 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
         present(viewController, animated: true)
     }
     
-    func roomCapture(sender: RoomCaptureViewController, didFinishedWithResult result: CapturedRoom) {
+    func roomCapture(sender: RoomCaptureViewController, didFinishedWithResult result:  RoomCaptureResult) {
         let jsonEncoder = JSONEncoder()
         if let jsonData = try? jsonEncoder.encode(result)
         {

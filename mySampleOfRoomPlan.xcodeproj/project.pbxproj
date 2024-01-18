@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D8AB68D2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */; };
+		9D8AB68F2B589792005683C4 /* RoomCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */; };
 		9DB9A5EB2B47CC040086519E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EA2B47CC040086519E /* AppDelegate.swift */; };
 		9DB9A5ED2B47CC040086519E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */; };
 		9DB9A5EF2B47CC040086519E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EE2B47CC040086519E /* ViewController.swift */; };
-		9DB9A5F22B47CC040086519E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F02B47CC040086519E /* Main.storyboard */; };
+		9DB9A5F22B47CC040086519E /* RoomPlanMainTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F02B47CC040086519E /* RoomPlanMainTemp.storyboard */; };
 		9DB9A5F42B47CC050086519E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F32B47CC050086519E /* Assets.xcassets */; };
 		9DB9A5F72B47CC050086519E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */; };
 		9DB9A6182B47CC7C0086519E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9A60F2B47CC7C0086519E /* Assets.xcassets */; };
@@ -26,11 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewControllerDelegate.swift; sourceTree = "<group>"; };
+		9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureResult.swift; sourceTree = "<group>"; };
 		9DB9A5E72B47CC040086519E /* mySampleOfRoomPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySampleOfRoomPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB9A5EA2B47CC040086519E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9DB9A5EE2B47CC040086519E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9DB9A5F12B47CC040086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DB9A5F12B47CC040086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RoomPlanMainTemp.storyboard; sourceTree = "<group>"; };
 		9DB9A5F32B47CC050086519E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB9A5F62B47CC050086519E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB9A5F82B47CC050086519E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +87,7 @@
 				9DB9A6372B4971D90086519E /* Room.usdz */,
 				9DB9A6392B49745F0086519E /* SceneKit Scene.scn */,
 				9DB9A6352B48328D0086519E /* LayoutView.swift */,
-				9DB9A5F02B47CC040086519E /* Main.storyboard */,
+				9DB9A5F02B47CC040086519E /* RoomPlanMainTemp.storyboard */,
 				9DB9A6312B47F2820086519E /* TestRoom.json */,
 				9DB9A5F32B47CC050086519E /* Assets.xcassets */,
 				9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */,
@@ -101,6 +105,8 @@
 				9DB9A6162B47CC7C0086519E /* OnboardingViewController.swift */,
 				9DB9A6172B47CC7C0086519E /* RoomCaptureViewController.swift */,
 				9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */,
+				9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */,
+				9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */,
 			);
 			path = RoomPlan;
 			sourceTree = "<group>";
@@ -169,7 +175,7 @@
 				9DB9A5F42B47CC050086519E /* Assets.xcassets in Resources */,
 				9DB9A6302B47CDFB0086519E /* RoomPlanMain.storyboard in Resources */,
 				9DB9A6182B47CC7C0086519E /* Assets.xcassets in Resources */,
-				9DB9A5F22B47CC040086519E /* Main.storyboard in Resources */,
+				9DB9A5F22B47CC040086519E /* RoomPlanMainTemp.storyboard in Resources */,
 				9DB9A6322B47F2820086519E /* TestRoom.json in Resources */,
 				9DB9A63A2B49745F0086519E /* SceneKit Scene.scn in Resources */,
 			);
@@ -187,6 +193,8 @@
 				9DB9A6362B48328D0086519E /* LayoutView.swift in Sources */,
 				9DB9A5ED2B47CC040086519E /* SceneDelegate.swift in Sources */,
 				9DB9A63C2B5099D70086519E /* RoomCaptureHelper.swift in Sources */,
+				9D8AB68F2B589792005683C4 /* RoomCaptureResult.swift in Sources */,
+				9D8AB68D2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift in Sources */,
 				9DB9A61C2B47CC7C0086519E /* OnboardingViewController.swift in Sources */,
 				9DB9A61D2B47CC7C0086519E /* RoomCaptureViewController.swift in Sources */,
 			);
@@ -195,12 +203,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9DB9A5F02B47CC040086519E /* Main.storyboard */ = {
+		9DB9A5F02B47CC040086519E /* RoomPlanMainTemp.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9DB9A5F12B47CC040086519E /* Base */,
 			);
-			name = Main.storyboard;
+			name = RoomPlanMainTemp.storyboard;
 			sourceTree = "<group>";
 		};
 		9DB9A5F52B47CC050086519E /* LaunchScreen.storyboard */ = {
@@ -362,9 +370,10 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "For RoomPlan ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = RoomPlanMainTemp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,9 +400,10 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "For RoomPlan ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = RoomPlanMainTemp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

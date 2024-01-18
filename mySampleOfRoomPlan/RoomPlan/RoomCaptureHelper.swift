@@ -8,22 +8,11 @@
 import Foundation
 import simd
 
+
+
 class RoomCaptureHelper {
+    typealias Surface2D = RoomCaptureResult.Surface2D
     
-//    struct Window {
-//        var dimentions : simd_float3
-//        var transform : simd_float4x4
-//    }
-//
-//    struct Door {
-//        var dimentions : simd_float3
-//        var transform : simd_float4x4
-//    }
-//
-    struct Surface2D {
-        var start: CGPoint
-        var end: CGPoint
-    }
     
     static func convertSurfaceTo2D(transform: simd_float4x4, dimensions: simd_float3) -> Surface2D {
         let start = matrix_multiply(transform, simd_float4(-dimensions / 2, 1))

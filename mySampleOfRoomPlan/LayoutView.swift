@@ -10,18 +10,20 @@ import simd
 import RoomPlan
 
 class LayoutView: UIView {
-
-    func setWindows(windows: [CapturedRoom.Surface]) {
+    typealias Surface2D = RoomCaptureResult.Surface2D
+    typealias Surface3D = RoomCaptureResult.Surface3D
+    
+    func setWindows(windows: [Surface3D]) {
         self.windowsToDraw = windows
         setNeedsDisplay()
     }
      
-    func setDoors(doors: [CapturedRoom.Surface]) {
+    func setDoors(doors: [Surface3D]) {
         self.doorsToDraw = doors
         setNeedsDisplay()
     }
     
-    func setWalls(walls: [CapturedRoom.Surface]) {
+    func setWalls(walls: [Surface3D]) {
         self.wallsToDraw = walls
         setNeedsDisplay()
     }
@@ -97,9 +99,9 @@ class LayoutView: UIView {
 
     }
     
-    private var wallsToDraw: [CapturedRoom.Surface] = []
-    private var windowsToDraw: [CapturedRoom.Surface] = []
-    private var doorsToDraw: [CapturedRoom.Surface] = []
+    private var wallsToDraw: [Surface3D] = []
+    private var windowsToDraw: [Surface3D] = []
+    private var doorsToDraw: [Surface3D] = []
     
     private let scale:Double = 50.0
     private let translationX = 400.0

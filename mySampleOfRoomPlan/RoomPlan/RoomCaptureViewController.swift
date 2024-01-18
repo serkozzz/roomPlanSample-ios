@@ -8,9 +8,7 @@ The sample app's main view controller that manages the scanning process.
 import UIKit
 import RoomPlan
 
-protocol RoomCaptureViewControllerDelegate{
-    func roomCapture(sender: RoomCaptureViewController, didFinishedWithResult result:CapturedRoom)
-}
+
 
 class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, RoomCaptureSessionDelegate {
     
@@ -77,7 +75,7 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
     func captureView(didPresent processedResult: CapturedRoom, error: Error?) {
         finalResults = processedResult
         
-        delegate?.roomCapture(sender: self, didFinishedWithResult: processedResult)
+        delegate?.roomCapture(sender: self, didFinishedWithResult: RoomCaptureResult(from: processedResult))
         
         self.exportButton?.isEnabled = true
         self.activityIndicator?.stopAnimating()
