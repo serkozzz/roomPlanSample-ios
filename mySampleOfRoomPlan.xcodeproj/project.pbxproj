@@ -10,6 +10,7 @@
 		9D8AB68D2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */; };
 		9D8AB68F2B589792005683C4 /* RoomCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */; };
 		9D8AB6952B59E862005683C4 /* RoomCaptureResult.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AB6942B59E862005683C4 /* RoomCaptureResult.json */; };
+		9D8AB6972B59FC68005683C4 /* RoomCaptureViewControllerDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8AB6962B59FC68005683C4 /* RoomCaptureViewControllerDummy.swift */; };
 		9DB9A5EB2B47CC040086519E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EA2B47CC040086519E /* AppDelegate.swift */; };
 		9DB9A5ED2B47CC040086519E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */; };
 		9DB9A5EF2B47CC040086519E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9A5EE2B47CC040086519E /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewControllerDelegate.swift; sourceTree = "<group>"; };
 		9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureResult.swift; sourceTree = "<group>"; };
 		9D8AB6942B59E862005683C4 /* RoomCaptureResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoomCaptureResult.json; sourceTree = "<group>"; };
+		9D8AB6962B59FC68005683C4 /* RoomCaptureViewControllerDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewControllerDummy.swift; sourceTree = "<group>"; };
 		9DB9A5E72B47CC040086519E /* mySampleOfRoomPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySampleOfRoomPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB9A5EA2B47CC040086519E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB9A5EC2B47CC040086519E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,8 +109,9 @@
 				9DB9A6122B47CC7C0086519E /* UnsupportedDevice.storyboard */,
 				9DB9A6162B47CC7C0086519E /* OnboardingViewController.swift */,
 				9DB9A6172B47CC7C0086519E /* RoomCaptureViewController.swift */,
-				9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */,
+				9D8AB6962B59FC68005683C4 /* RoomCaptureViewControllerDummy.swift */,
 				9D8AB68C2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift */,
+				9DB9A63B2B5099D70086519E /* RoomCaptureHelper.swift */,
 				9D8AB68E2B589792005683C4 /* RoomCaptureResult.swift */,
 			);
 			path = RoomPlan;
@@ -199,6 +202,7 @@
 				9DB9A63C2B5099D70086519E /* RoomCaptureHelper.swift in Sources */,
 				9D8AB68F2B589792005683C4 /* RoomCaptureResult.swift in Sources */,
 				9D8AB68D2B5896EF005683C4 /* RoomCaptureViewControllerDelegate.swift in Sources */,
+				9D8AB6972B59FC68005683C4 /* RoomCaptureViewControllerDummy.swift in Sources */,
 				9DB9A61C2B47CC7C0086519E /* OnboardingViewController.swift in Sources */,
 				9DB9A61D2B47CC7C0086519E /* RoomCaptureViewController.swift in Sources */,
 			);

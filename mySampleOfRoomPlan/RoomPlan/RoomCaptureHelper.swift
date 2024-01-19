@@ -25,6 +25,11 @@ class RoomCaptureHelper {
     }
 
     
+    static func isSupported() -> Bool {
+        return true
+        //TODO implementation
+    }
+    
     static func saveToDisk(result: RoomCaptureResult) {
         let jsonEncoder = JSONEncoder()
         if let jsonData = try? jsonEncoder.encode(result)

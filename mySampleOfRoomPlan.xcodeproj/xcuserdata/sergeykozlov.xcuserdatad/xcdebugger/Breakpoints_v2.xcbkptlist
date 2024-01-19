@@ -8,16 +8,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "133AD808-44F5-4E00-8128-205D241071C6"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mySampleOfRoomPlan/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "roomCapture(sender:didFinishedWithResult:)"
-            landmarkType = "7">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "roomCapture(didFinishedWithResult:)"
+            landmarkType = "9">
             <Locations>
                <Location
                   uuid = "133AD808-44F5-4E00-8128-205D241071C6 - 5cefbd040c29d691"
@@ -229,6 +229,51 @@
                   endingLineNumber = "47"
                   offsetFromSymbolStart = "384">
                </Location>
+               <Location
+                  uuid = "133AD808-44F5-4E00-8128-205D241071C6 - 4946d868ca86a12c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.roomCapture(didFinishedWithResult: mySampleOfRoomPlan.RoomCaptureResult) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "133AD808-44F5-4E00-8128-205D241071C6 - 4946d868ca86a10f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.roomCapture(didFinishedWithResult: mySampleOfRoomPlan.RoomCaptureResult) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "133AD808-44F5-4E00-8128-205D241071C6 - 4946d868ca86a0a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.roomCapture(didFinishedWithResult: mySampleOfRoomPlan.RoomCaptureResult) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "472">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -315,14 +360,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B1C1E4E2-73B1-4873-9DE6-10DCBA770B89"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mySampleOfRoomPlan/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "startScan(_:)"
             landmarkType = "7">
             <Locations>
@@ -415,6 +460,21 @@
                   startingLineNumber = "36"
                   endingLineNumber = "36"
                   offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "B1C1E4E2-73B1-4873-9DE6-10DCBA770B89 - 9b8966b52cf24a55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.startScan(__C.UIButton) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "152">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -522,8 +582,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "saveToDisk(result:)"
             landmarkType = "7">
             <Locations>
@@ -570,8 +630,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "saveToDisk(result:)"
             landmarkType = "7">
             <Locations>
@@ -633,8 +693,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "saveToDisk(result:)"
             landmarkType = "7">
             <Locations>
@@ -674,54 +734,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "280F7BAF-2DD8-4168-97AD-D675BB097750"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mySampleOfRoomPlan/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "280F7BAF-2DD8-4168-97AD-D675BB097750 - 1dce62118443a42f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mySampleOfRoomPlan.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "mySampleOfRoomPlan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "280F7BAF-2DD8-4168-97AD-D675BB097750 - 1dce62118443a40e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mySampleOfRoomPlan.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "mySampleOfRoomPlan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "480">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1975A7FB-301F-45CE-A199-E2BAE1D5D6A3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -729,8 +741,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "loadFrom(jsonFile:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -745,8 +757,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "loadFrom(jsonFile:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -761,8 +773,8 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "loadFrom(jsonFile:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -777,9 +789,73 @@
             filePath = "mySampleOfRoomPlan/RoomPlan/RoomCaptureHelper.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "createRoomCaptureResultFromRawJSON()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "759D1AED-B29E-4A95-8DBD-813F80883DB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mySampleOfRoomPlan/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "roomCapture(didFinishedWithResult:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "759D1AED-B29E-4A95-8DBD-813F80883DB6 - 4946d868ca86a193"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.roomCapture(didFinishedWithResult: mySampleOfRoomPlan.RoomCaptureResult) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "759D1AED-B29E-4A95-8DBD-813F80883DB6 - 4946d868ca86a12c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mySampleOfRoomPlan.ViewController.roomCapture(didFinishedWithResult: mySampleOfRoomPlan.RoomCaptureResult) -&gt; ()"
+                  moduleName = "mySampleOfRoomPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergeykozlov/Documents/repositories/roomPlanSample-ios/mySampleOfRoomPlan/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "180F61F3-BDDB-4222-92E5-F607CAFEE21D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mySampleOfRoomPlan/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "roomCapture(didFinishedWithResult:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -5,9 +5,11 @@
 //  Created by Sergey Kozlov on 05.01.2024.
 //
 
+
 import UIKit
-import RoomPlan
 import simd
+
+let ROOM_PLAN_DUMMY = true
 
 class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
     
@@ -15,37 +17,49 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-///*
-        if let room = RoomCaptureHelper.createRoomCaptureResultFromRawJSON() {
-            RoomCaptureHelper.saveToDisk(result: room)
-        }
-//*/
-        
-///*
-        if let room = RoomCaptureHelper.createRoomCaptureResultFromFile() {
-            layoutView.setWalls(walls: room.walls)
-            layoutView.setDoors(doors: room.doors)
-            layoutView.setWindows(windows: room.windows)
-        }
-//*/
+
+//        if let room = RoomCaptureHelper.createRoomCaptureResultFromRawJSON() {
+//            RoomCaptureHelper.saveToDisk(result: room)
+//        }
+
     }
     
 
     
     @IBAction func startScan(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
-        let viewController = storyboard.instantiateViewController(
-            withIdentifier: "RoomCaptureViewNavigationController")
-        viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: true)
+        
+        if (ROOM_PLAN_DUMMY) {
+            let viewController = RoomCaptureViewControllerDummy()
+            viewController.modalPresentationStyle = .fullScreen
+            present(viewController, animated: true)
+            viewController.delegate = self
+        }
+        else {
+            if (RoomCaptureHelper.isSupported()) {
+                let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
+                if let viewController = storyboard.instantiateViewController(
+                    withIdentifier: "RoomCaptureViewController") as? RoomCaptureViewController {
+                    viewController.modalPresentationStyle = .fullScreen
+                    present(viewController, animated: true)
+                    viewController.delegate = self
+                }
+            }
+        }
     }
-    
-    func roomCapture(sender: RoomCaptureViewController, didFinishedWithResult result:  RoomCaptureResult) {
+
+
+    func roomCapture(didFinishedWithResult result:  RoomCaptureResult) {
+        dismiss(animated: true)
         let jsonEncoder = JSONEncoder()
         if let jsonData = try? jsonEncoder.encode(result)
         {
             print(jsonData)
+            layoutView.setWalls(walls: result.walls)
+            layoutView.setDoors(doors: result.doors)
+            layoutView.setWindows(windows: result.windows)
         }
+        
+        
     }
 }
 

@@ -8,6 +8,6 @@
 import Foundation
 
 
-protocol RoomCaptureViewControllerDelegate{
-    func roomCapture(sender: RoomCaptureViewController, didFinishedWithResult result:RoomCaptureResult)
+protocol RoomCaptureViewControllerDelegate : AnyObject {
+    func roomCapture(didFinishedWithResult result:RoomCaptureResult)
 }

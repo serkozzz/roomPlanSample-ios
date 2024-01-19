@@ -75,7 +75,7 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
     func captureView(didPresent processedResult: CapturedRoom, error: Error?) {
         finalResults = processedResult
         
-        delegate?.roomCapture(sender: self, didFinishedWithResult: RoomCaptureResult(from: processedResult))
+        delegate?.roomCapture(didFinishedWithResult: RoomCaptureResult(from: processedResult))
         
         self.exportButton?.isEnabled = true
         self.activityIndicator?.stopAnimating()
