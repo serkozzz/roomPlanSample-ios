@@ -9,7 +9,7 @@
 import UIKit
 import simd
 
-let ROOM_PLAN_DUMMY = true
+let ROOM_PLAN_DUMMY = false
 
 class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
     
@@ -41,8 +41,11 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
                     let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
                     if let viewController = storyboard.instantiateViewController(
                         withIdentifier: "RoomCaptureViewController") as? RoomCaptureViewController {
+                        
+                        let nav = UINavigationController()
+                        nav.pushViewController(viewController, animated: false)
                         viewController.modalPresentationStyle = .fullScreen
-                        present(viewController, animated: true)
+                        present(nav, animated: true)
                         viewController.delegate = self
                     }
                 }
