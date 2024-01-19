@@ -27,16 +27,31 @@ struct RoomCaptureResult : Codable {
         var end: CGPoint
     }
     
+    struct Object: Codable {
+        var dimensions: simd_float3
+        var transform: simd_float4x4
+        var category: String
+        
+        @available(iOS 17.0, *)
+        init(from object: CapturedRoom.Object) {
+            self.dimensions = object.dimensions
+            self.transform = object.transform
+            self.category = String(describing: object.category)
+        }
+    }
+    
     @available(iOS 17.0, *)
     init(from room: CapturedRoom) {
         walls = room.walls.map {  Surface3D(from: $0) }
         doors = room.doors.map {  Surface3D(from: $0) }
         windows = room.windows.map { Surface3D(from: $0) }
+        objects = room.objects.map { Object(from: $0) }
     }
     
     var walls: [Surface3D] = []
     var windows: [Surface3D] = []
     var doors: [Surface3D] = []
+    var objects: [Object] = []
 }
 
 

@@ -113,7 +113,7 @@ class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, Room
                 popOver.sourceView = self.exportButton
             }
         } catch {
-            print("Error = \(error)")
+            print(error.localizedDescription)
         }
     }
     

@@ -15,30 +15,22 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        guard let path = Bundle.main.path(forResource: "TestRoom", ofType: "json") else {
-            return
+///*
+        if let room = RoomCaptureHelper.createRoomCaptureResultFromRawJSON() {
+            RoomCaptureHelper.saveToDisk(result: room)
         }
+//*/
         
-        do {
-            let url = URL(fileURLWithPath: path)
-            let data = try Data(contentsOf: url)
-            
-            let capturedRoom = try JSONDecoder().decode(CapturedRoom.self, from: data)
-            print(capturedRoom)
-            
-            let roomCaptureResult = RoomCaptureResult(from: capturedRoom)
-            
-            
-            layoutView.setWalls(walls: roomCaptureResult.walls)
-            layoutView.setDoors(doors: roomCaptureResult.doors)
-            layoutView.setWindows(windows: roomCaptureResult.windows)
-            
-        } catch {
-            print(error.localizedDescription)
+///*
+        if let room = RoomCaptureHelper.createRoomCaptureResultFromFile() {
+            layoutView.setWalls(walls: room.walls)
+            layoutView.setDoors(doors: room.doors)
+            layoutView.setWindows(windows: room.windows)
         }
+//*/
     }
     
+
     
     @IBAction func startScan(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
