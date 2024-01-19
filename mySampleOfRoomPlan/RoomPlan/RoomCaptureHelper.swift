@@ -49,6 +49,7 @@ class RoomCaptureHelper {
         }
     }
     
+    @available(iOS 16.0, *)
     static func createRoomCaptureResultFromRawJSON() -> RoomCaptureResult? {
         guard let room: CapturedRoom = loadFrom(jsonFile: "TestRoomRaw") else { return nil }
         return RoomCaptureResult(from: room)

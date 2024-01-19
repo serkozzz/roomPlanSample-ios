@@ -36,12 +36,15 @@ class ViewController: UIViewController, RoomCaptureViewControllerDelegate {
         }
         else {
             if (RoomCaptureHelper.isSupported()) {
-                let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
-                if let viewController = storyboard.instantiateViewController(
-                    withIdentifier: "RoomCaptureViewController") as? RoomCaptureViewController {
-                    viewController.modalPresentationStyle = .fullScreen
-                    present(viewController, animated: true)
-                    viewController.delegate = self
+                
+                if #available(iOS 16.0, *) {
+                    let storyboard = UIStoryboard(name: "RoomPlanMain", bundle: nil)
+                    if let viewController = storyboard.instantiateViewController(
+                        withIdentifier: "RoomCaptureViewController") as? RoomCaptureViewController {
+                        viewController.modalPresentationStyle = .fullScreen
+                        present(viewController, animated: true)
+                        viewController.delegate = self
+                    }
                 }
             }
         }

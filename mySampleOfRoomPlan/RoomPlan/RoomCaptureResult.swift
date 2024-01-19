@@ -15,7 +15,7 @@ struct RoomCaptureResult : Codable {
         var dimensions : simd_float3
         var transform : simd_float4x4
         
-        @available(iOS 17.0, *)
+        @available(iOS 16.0, *)
         init(from room: CapturedRoom.Surface) {
             self.dimensions = room.dimensions
             self.transform = room.transform
@@ -32,7 +32,7 @@ struct RoomCaptureResult : Codable {
         var transform: simd_float4x4
         var category: String
         
-        @available(iOS 17.0, *)
+        @available(iOS 16.0, *)
         init(from object: CapturedRoom.Object) {
             self.dimensions = object.dimensions
             self.transform = object.transform
@@ -40,7 +40,7 @@ struct RoomCaptureResult : Codable {
         }
     }
     
-    @available(iOS 17.0, *)
+    @available(iOS 16.0, *)
     init(from room: CapturedRoom) {
         walls = room.walls.map {  Surface3D(from: $0) }
         doors = room.doors.map {  Surface3D(from: $0) }

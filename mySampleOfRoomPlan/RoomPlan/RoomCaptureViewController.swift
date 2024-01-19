@@ -9,7 +9,7 @@ import UIKit
 import RoomPlan
 
 
-
+@available(iOS 16.0, *)
 class RoomCaptureViewController: UIViewController, RoomCaptureViewDelegate, RoomCaptureSessionDelegate {
     
     @IBOutlet var exportButton: UIButton?
